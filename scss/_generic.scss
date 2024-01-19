@@ -1,0 +1,92 @@
+  /* ------ CODIGO GENERICO DEL NAV PARA GALLERY, CONTACT, KNOW Y SERVICE  ------- */
+  
+  html, body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /*Colores a utilizar*/
+  :root{
+      --lion: #bb9457ff;
+      --brown: #99582aff;
+  }
+  
+  /*Tipograpyes*/
+  :root{
+    --parrafo:'Roboto', sans-serif;
+    --subtitle:'Josefin Sans', sans-serif;
+    --a:var(--subtitle)
+  }
+  
+  ul li{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none!important;
+    font-family: var(--a);
+    font-weight: 500;
+  }
+  
+  /*"nav" para enlaces*/
+  .generic_nav{
+    display: flex;
+    justify-content:space-around;
+    width: 90%;
+    /*"a" Enlaces del header*/
+    a{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    /*Imagen logo    recien saque el a fijate si anda*/
+    img{
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+        perspective: 100px;
+        width: 50%;
+      /*Style button*/
+        border: 3px solid transparent;
+        border-radius: 5px;
+        border-image: linear-gradient(to right, --lion, --brown); 
+        border-image-slice: 1; 
+      }
+    }
+     /*"ul" Lista desordenada */
+      div ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        
+      }
+      ul li a{
+        color: rgb(19, 22, 22);
+        font-weight: 520;
+      }
+  }
+  
+  .generic_footer{
+    max-width: 100%;
+    height: 10%;
+    background-color: rgba(150, 113, 87, 0.5);
+    display: flex;
+    justify-content:space-around!important;
+    align-items: center;
+    margin-top: 2%;
+    div{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+    div p{
+        margin: 0px;
+        font-family: var(--parrafo);
+    } 
+  }
+  .generic_footer div a img{
+    width: 35px;
+  }
+  

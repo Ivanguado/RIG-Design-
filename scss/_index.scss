@@ -1,0 +1,86 @@
+
+  
+  /*--------------     INDEX     --------------*/
+  
+  
+  /*Imagen de fondo*/
+  .index_body--img {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../imagenes/imagen_index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+  
+  /*Estilo al navbar*/
+  .index_header--navbar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 20px;
+    margin-right: 20px;
+    div ul{
+        /* Modelo de caja */
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+      
+        /* Decoración */
+        list-style-type: none;
+        gap: 50px;
+      
+        /* Visualización y diseño */
+        align-items: center;
+        justify-content: space-evenly;
+      
+        /* Animaciones y Transiciones */
+        animation: flipInX;
+        animation-duration: 3s;
+        li{
+          font-family:var(--subtitle);
+          a{
+            color: azure!important;
+          }
+        }
+     }
+  }
+  
+  .index_main{
+    height: 70%;
+    section{
+        text-align: center;
+        height: 30%;
+        h6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 2%;
+            font-family: var(--subtitle);
+            font-weight: 550;
+            font-size: larger;
+            color: rgb(224, 224, 224);
+          }
+        div{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            p{
+                max-width: 40%;
+                background-color: rgba(150, 113, 87, 0.5);
+                border-radius: 10px;
+                font-family: var(--subtitle);
+                font-weight: 400;
+                font-size: larger;
+                align-items: center;
+              }
+        }
+      }
+  }
+} 
+  

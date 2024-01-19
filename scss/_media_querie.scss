@@ -1,0 +1,119 @@
+
+  /* **************************************************** */
+  /* &&&&&&&& Media querie &&&&&&& */
+  
+  
+  /*Media querie gral*/
+  
+  /*Desktop*/
+  @media only screen and (max-width: 1024px) {
+  
+    /* -------- INDEX -------------*/
+    
+      .index_header--navbar nav img{
+        width: 200px;
+      }
+      
+         /*Parrafo*/
+      .index_main section div p{
+        max-width: 70%;
+      }
+    
+      }
+      
+      @media only screen and (max-width: 768px) {
+    
+      #body{
+        height: 100%;
+      }
+    
+    
+    /* -------- INDEX -------------*/
+    
+      .index_header--navbar nav img{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+      }
+    
+      .index_header--navbar nav ul li a {
+        font-size: 14px;
+      }
+    
+    
+      .service_main-section1{
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      .service_main-section2{
+        gap: 5%;
+      }
+    
+      
+      .contact_main--section2{
+        flex-wrap: wrap;
+      }
+    
+      }
+    
+    @media (max-width: 576px){
+    
+        .generic_footer div {
+          gap: 10px;
+      }
+        .generic_footer div img {
+          width: 23px!important;
+      }
+      
+    }
+    
+    /* ************************************************* */
+    
+    
+    /*-- Media querie pisando Boostrap --*/
+    
+    @media (min-width: 992px){
+      .bg-body-tertiaryM{
+        display: flex;
+        justify-content: space-around;
+        background-color: none!important;
+        --bs-bg-opacity: 1;
+      }
+      .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto!important;
+        flex-grow: 0!important; 
+        align-items: center!important;
+      }
+        .navbar-expand-lg {
+          flex-wrap: nowrap;
+          justify-content:space-around!important;
+      }
+    }
+    
+    @media (min-width: 576px){
+        .generic_nav a {
+          display: flex;
+          justify-content:flex-start;
+          align-items: center;
+      }
+    
+      .navbar-brand {
+         padding-top: 0px!important;
+         padding-bottom: 0px!important;
+         margin-right: 0px!important;
+    }
+    
+    .container-fluid{
+      justify-content: space-around!important;
+    }
+    }
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,53 @@
+  /*--------------     CONTACT     --------------*/
+  
+  .contact_body{
+    background-image: url('../imagenes/know_fondo-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+    /*section 1 */
+    .contact_main--section1{
+      display: block;
+      text-align: center;
+      /* "Titulo" section 1 */
+      .contact_main--section1 h1{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin: 0px;
+        font-family: var(--subtitle);
+      }   
+      /* "Subtitulo" section 1 */
+      h6{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin: 0px;
+        font-family: var(--parrafo);
+      } 
+        /* "imagen" section 1 wsp */
+      a img{
+        cursor: pointer;
+        width: 4%;
+        margin: 1%;
+      }
+    }
+    
+      /*section 2*/
+    .contact_main--section2{
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      img{
+        width: 50%;
+        padding: 5%;
+      }
+    }
+  
+    /*formulario section 2*/
+     .contact_main--section2 form{
+      padding: 5%;
+    }
+  }  
+    

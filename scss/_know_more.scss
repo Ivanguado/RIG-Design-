@@ -1,0 +1,53 @@
+  
+  /* ---------- KNOW MORE ----------*/
+  
+  
+  
+  .know_body{
+    background-image: url('../imagenes/know_fondo-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    main{
+      margin-top: 3%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      /*-Seccion 1-*/
+      .know_main-section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+          display: flex;
+          justify-content:baseline;
+          width: 20rem;
+          font-size: 3rem;
+          font-weight: 200;
+          font-family:var(--subtitle);
+        }
+        p{
+          font-family:var(--parrafo);
+          font-weight: 400;
+          font-size:larger;
+          line-height: 150%;
+          margin: 0%;
+          text-align: justify;
+          width: 20rem;
+        }
+      }
+      .know_main-section2{
+        display: flex;
+        justify-content: center;
+        img{
+          width: 20em;
+          height: auto;
+        }
+      }
+    }
+  }
+    
+    
