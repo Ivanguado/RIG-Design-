@@ -1,8 +1,6 @@
   
   /* ---------- KNOW MORE ----------*/
   
-  
-  
   .know_body{
     background-image: url('../imagenes/know_fondo-img.jpg');
     background-size: cover;
@@ -23,6 +21,7 @@
         align-items: center;
         h1{
           display: flex;
+          color: map-get($font_colors, generic_color-titles);
           justify-content:baseline;
           width: 20rem;
           font-size: 3rem;

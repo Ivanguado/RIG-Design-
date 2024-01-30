@@ -2,6 +2,8 @@
 
 
 
+
+
   /*  -------------------- GALLERY ---------------- */
   
   .gallery_body{
@@ -17,6 +19,7 @@
       text-align: center;
       margin: 2%;
       h1{
+        color: map-get($font_colors, generic_color-titles);
         font-family: var(--subtitle);
         margin: 3%;
       }

@@ -1,0 +1,30 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*
+Se usa:
+@extend.flex-center;
+*/
+
+
+
+/*
+Para aplicar un extend una sola vez 
+no es necesario crear el mismo si no
+se puede crear y declarar asi:
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+y para utilizarlo::after
+
+@extend %flex-center;
+*/

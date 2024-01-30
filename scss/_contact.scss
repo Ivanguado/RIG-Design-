@@ -13,11 +13,12 @@
       display: block;
       text-align: center;
       /* "Titulo" section 1 */
-      .contact_main--section1 h1{
+      .contact_main--section1 .contact_h1{
         padding-top: 2%;
         padding-bottom: 2%;
         margin: 0px;
         font-family: var(--subtitle);
+        color: map-get($font_colors,generic_color-titles)!important;
       }   
       /* "Subtitulo" section 1 */
       h6{

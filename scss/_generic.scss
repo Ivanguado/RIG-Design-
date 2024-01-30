@@ -3,43 +3,36 @@
   html, body {
     margin: 0px;
     padding: 0px;
+    box-sizing: none!important;
   }
   
-  /*Colores a utilizar*/
-  :root{
-      --lion: #bb9457ff;
-      --brown: #99582aff;
-  }
-  
-  /*Tipograpyes*/
-  :root{
-    --parrafo:'Roboto', sans-serif;
-    --subtitle:'Josefin Sans', sans-serif;
-    --a:var(--subtitle)
-  }
-  
-  ul li{
-    list-style: none;
-  }
-  
-  a{
-    text-decoration: none!important;
-    font-family: var(--a);
-    font-weight: 500;
-  }
-  
-  /*"nav" para enlaces*/
-  .generic_nav{
+  /*Imagen de fondo*/
+  .index_body--img {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-image: url('../imagenes/imagen_index.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      }
+      
+
+      /*"nav" para enlaces*/
+  .generic_nav{  /*header*/
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between!important;
     width: 90%;
+    height: 30%;
     /*"a" Enlaces del header*/
     a{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    /*Imagen logo    recien saque el a fijate si anda*/
-    img{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      margin: 0px;
+      padding: 0px;
+      /*Imagen logo    recien saque el a fijate si anda*/
+      img{
         display: flex;
         justify-content: center;
         margin: 2%;
@@ -51,42 +44,65 @@
         border-image: linear-gradient(to right, --lion, --brown); 
         border-image-slice: 1; 
       }
+      
     }
      /*"ul" Lista desordenada */
-      div ul{
+     div{
+      flex-basis: 100%;
+      flex-grow: 0!important;     /*estas tres son de por si*/
+      align-items: center;
+      ul{
+      /* Modelo de caja */
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+    
+      /* Decoración */
+      list-style-type: none;
+      gap: 50px;
+    
+      /* Visualización y diseño */
+      align-items: center;
+      justify-content: space-evenly;
+    
+      /* Animaciones y Transiciones */
+      animation: flipInX;
+      animation-duration: 3s;
+      li{
+        font-family:var(--subtitle);
+        list-style-type: none;
+        a{
+          color: black;
+        }
+      }
+    }
+  }
+  }  
+
+
+      
+      
+      .generic_footer{
+        max-width: 100%;
+        height: 10%;
+        background-color: map-get($font_colors,index_background-color-pf);
         display: flex;
-        justify-content: center;
+        justify-content:space-around!important;
         align-items: center;
-        padding: 0px;
-        margin: 0px;
-        
+        margin-top: 2%;
+        div{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          }
+        div p{
+            margin: 0px;
+            font-family: var(--parrafo);
+        } 
       }
-      ul li a{
-        color: rgb(19, 22, 22);
-        font-weight: 520;
+      .generic_footer div a img{
+        width: 35px;
       }
-  }
-  
-  .generic_footer{
-    max-width: 100%;
-    height: 10%;
-    background-color: rgba(150, 113, 87, 0.5);
-    display: flex;
-    justify-content:space-around!important;
-    align-items: center;
-    margin-top: 2%;
-    div{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
-    div p{
-        margin: 0px;
-        font-family: var(--parrafo);
-    } 
-  }
-  .generic_footer div a img{
-    width: 35px;
-  }
-  
