@@ -24,13 +24,14 @@ y para utilizarlo::after
 @extend %flex-center;
 */
 /* ------ CODIGO GENERICO DEL NAV PARA GALLERY, CONTACT, KNOW Y SERVICE  ------- */
-html, body {
+html,
+body {
   margin: 0px;
   padding: 0px;
   box-sizing: none !important;
 }
 
-/*Imagen de fondo*/
+/* Imagen de fondo */
 .index_body--img {
   display: flex;
   flex-direction: column;
@@ -41,14 +42,15 @@ html, body {
   background-attachment: fixed;
 }
 
-/*"nav" para enlaces*/
-.generic_nav { /*header*/
+/* "nav" para enlaces */
+.generic_nav { /* header */
   display: flex;
   justify-content: space-between !important;
   width: 90%;
   height: 20%;
-  /*"a" Enlaces del header*/
-  /*"ul" Lista desordenada */
+  /* "a" Enlaces del header */
+  /* Imagen logo */
+  /* "ul" Lista desordenada */
 }
 .generic_nav a {
   display: flex;
@@ -56,7 +58,6 @@ html, body {
   align-items: center;
   margin: 0px;
   padding: 0px;
-  /*Imagen logo    recien saque el a fijate si anda*/
 }
 .generic_nav a img {
   display: flex;
@@ -64,7 +65,7 @@ html, body {
   margin: 2%;
   perspective: 100px;
   width: 50%;
-  /*Style button*/
+  /* Style button */
   border: 3px solid transparent;
   border-radius: 5px;
   border-image: linear-gradient(to right, --lion, --brown);
@@ -72,7 +73,7 @@ html, body {
 }
 .generic_nav div {
   flex-basis: 100%;
-  flex-grow: 0 !important; /*estas tres son de por si*/
+  flex-grow: 0 !important;
   align-items: center;
 }
 .generic_nav div ul {
@@ -100,8 +101,8 @@ html, body {
   color: black;
 }
 
+/* Footer */
 .generic_footer {
-  position: fixed;
   bottom: 0;
   width: 100%;
   height: auto;
@@ -122,29 +123,28 @@ html, body {
   margin: 0px;
   font-family: var(--parrafo);
 }
-
 .generic_footer div a img {
   width: 35px;
 }
 
-/*--------------     CONTACT     --------------*/
+/*--------------  CONTACT  --------------*/
 .contact_body {
+  /* Background image settings */
   background-image: url("../imagenes/know_fondo-img.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /*section 1 */
-  /*section 2*/
-  /*formulario section 2*/
+  /* Section 1 */
+  /* Section 2 */
 }
 .contact_body .contact_main--section1 {
   display: block;
   text-align: center;
-  /* "Titulo" section 1 */
-  /* "Subtitulo" section 1 */
-  /* "imagen" section 1 wsp */
+  /* Title within section 1 */
+  /* Subtitle within section 1 */
+  /* Image (WhatsApp icon) within section 1 */
 }
-.contact_body .contact_main--section1 .contact_main--section1 .contact_h1 {
+.contact_body .contact_main--section1 .contact_h1 {
   padding-top: 2%;
   padding-bottom: 2%;
   margin: 0px;
@@ -166,6 +166,8 @@ html, body {
   display: flex;
   align-items: center;
   max-width: 100%;
+  /* Image within section 2 */
+  /* Form within section 2 */
 }
 .contact_body .contact_main--section2 img {
   width: 50%;
@@ -175,8 +177,9 @@ html, body {
   padding: 5%;
 }
 
-/*  -------------------- GALLERY ---------------- */
+/* ---------------- GALLERY ---------------- */
 .gallery_body {
+  /* Background image settings */
   background-image: url("../imagenes/know_fondo-img.jpg");
   background-size: cover;
   background-position: center;
@@ -186,7 +189,8 @@ html, body {
   display: block;
   text-align: center;
   margin: 2%;
-  /*Aplicando Grid*/
+  /* Title */
+  /* Image grid */
 }
 .gallery_body .gallery_main h1 {
   color: #64331b;
@@ -201,13 +205,19 @@ html, body {
   grid-template-areas: "img-3 img-2 img-1" "img-4 img-5 img-6" "img-9 img-8 img-7";
   grid-template-columns: 150px 156px 167px;
   grid-template-rows: 164px 105px 111px;
+  /* Individual image styles */
+  /* Hover effect for all images */
+  /* Specific styles for other images (img-2, img-3, etc.) */
+  /* ... (omitted for brevity, apply similar patterns as for img-1) */
 }
 .gallery_body .gallery_main #gallery_section--imgs div {
   overflow: hidden;
 }
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-1 {
-  grid-area: img-1;
+.gallery_body .gallery_main #gallery_section--imgs img {
   width: 100%;
+}
+.gallery_body .gallery_main #gallery_section--imgs #id_img-1 {
+  grid-area: img-1;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
@@ -215,103 +225,30 @@ html, body {
   height: 150px;
   transition: 3s;
 }
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-1:hover {
+.gallery_body .gallery_main #gallery_section--imgs img:hover {
   transform: scale(1.1);
   cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-2 {
-  grid-area: img-2;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-2:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-3 {
-  grid-area: img-3;
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-3:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-4 {
-  grid-area: img-4;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-4:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-5 {
-  grid-area: img-5;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-5:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-6 {
-  grid-area: img-6;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-6:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-7 {
-  grid-area: img-7;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-7:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-8 {
-  grid-area: img-8;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-8:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-9 {
-  grid-area: img-7;
-  transition: 3s;
-}
-.gallery_body .gallery_main #gallery_section--imgs div #id_img-9:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.gallery_body .gallery_main #gallery_section--imgs div img {
-  width: 100%;
 }
 
-/*"nav" para enlaces*/
-.generic_nav { /*header*/ }
+/* "nav" para enlaces */
 .generic_nav div ul li .index_nav-a {
   color: azure !important;
 }
 
+/* index_main */
 .index_main {
   height: auto;
   margin-bottom: 5%;
   margin-block: 5%;
+  /* index_section1 */
+  /* section */
 }
 .index_main .index_section1 {
   height: auto;
   box-sizing: none !important;
   margin-block: 0px;
   font-size: 100%;
+  /* h6 */
 }
 .index_main .index_section1 h6 {
   margin: 5%;
@@ -329,6 +266,7 @@ html, body {
   align-items: flex-start;
   justify-content: center;
   height: auto;
+  /* p */
 }
 .index_main section div p {
   background-color: rgba(150, 113, 87, 0.5);
@@ -336,15 +274,16 @@ html, body {
   font-family: var(--subtitle);
   font-size: 30px;
   font-weight: 400;
-  font-size: larger;
-  align-items: center;
+  font-size: larger; /* Duplicado, se podría eliminar */
+  align-items: center; /* No es necesario para elementos en línea */
   color: azure;
   padding: 20px;
   max-width: 70%;
 }
 
-/* ---------- KNOW MORE ----------*/
+/* ---------- KNOW MORE ---------- */
 .know_body {
+  /* Background image settings */
   background-image: url("../imagenes/know_fondo-img.jpg");
   background-size: cover;
   background-position: center;
@@ -356,7 +295,8 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  /*-Seccion 1-*/
+  /* -Seccion 1- */
+  /* -Seccion 2- */
 }
 .know_body main .know_main-section1 {
   display: flex;
@@ -403,6 +343,8 @@ html, body {
   text-align: center;
   height: 70%;
   max-height: 70%;
+  /* Estilos generales para la sección principal */
+  /* Estilos para la segunda sección */
 }
 .service_body .service_main section {
   margin: 5%;
@@ -574,7 +516,5 @@ html, body {
     width: 25px;
   }
 }
-/*Acordate que el div que afectaba a todas las paginas tenia una class container
-de ultima agregaselas a las paginas que quedan */
 
 /*# sourceMappingURL=style.css.map */

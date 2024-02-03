@@ -1,51 +1,58 @@
-  /*--------------     CONTACT     --------------*/
-  
-  .contact_body{
-    background-image: url('../imagenes/know_fondo-img.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /*section 1 */
-    .contact_main--section1{
-      display: block;
-      text-align: center;
-      /* "Titulo" section 1 */
-      .contact_main--section1 .contact_h1{
-        padding-top: 2%;
-        padding-bottom: 2%;
-        margin: 0px;
-        font-family: var(--subtitle);
-        color: map-get($font_colors,generic_color-titles)!important;
-      }   
-      /* "Subtitulo" section 1 */
-      h6{
-        padding-top: 1%;
-        padding-bottom: 1%;
-        margin: 0px;
-        font-family: var(--parrafo);
-      } 
-        /* "imagen" section 1 wsp */
-      a img{
-        cursor: pointer;
-        width: 4%;
-        margin: 1%;
-      }
+/*--------------  CONTACT  --------------*/
+
+.contact_body {
+  /* Background image settings */
+  background-image: url('../imagenes/know_fondo-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* Section 1 */
+  .contact_main--section1 {
+    display: block;
+    text-align: center;
+
+    /* Title within section 1 */
+    .contact_h1 {
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin: 0px;
+      font-family: var(--subtitle);
+      color: map-get($font_colors, generic_color-titles) !important;
     }
-    
-      /*section 2*/
-    .contact_main--section2{
-      display: flex;
-      align-items: center;
-      max-width: 100%;
-      img{
-        width: 50%;
-        padding: 5%;
-      }
+
+    /* Subtitle within section 1 */
+    h6 {
+      padding-top: 1%;
+      padding-bottom: 1%;
+      margin: 0px;
+      font-family: var(--parrafo);
     }
-  
-    /*formulario section 2*/
-     .contact_main--section2 form{
+
+    /* Image (WhatsApp icon) within section 1 */
+    a img {
+      cursor: pointer;
+      width: 4%;
+      margin: 1%;
+    }
+  }
+
+  /* Section 2 */
+  .contact_main--section2 {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+
+    /* Image within section 2 */
+    img {
+      width: 50%;
       padding: 5%;
     }
-  }  
+
+    /* Form within section 2 */
+    form {
+      padding: 5%;
+    }
+  }
+} 
     

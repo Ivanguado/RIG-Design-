@@ -1,53 +1,63 @@
- 
-  
-  /* -------- SERVICE -------------*/
+/* -------- SERVICE -------------*/
 
-  .service_body{
-    background-image: url('../imagenes/know_fondo-img.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-      .service_main{
-        display: block;
-        text-align: center;
-        height: 70%;
-        max-height: 70%;
-        section{ 
-          margin: 5%;
-          h1{
-            color: map-get($font_colors, generic_color-titles);
-            font-family: var(--subtitle);
-            font-size: 2rem;
-            font-weight: 450;
-          }
-          h6{
-            font-family:var(--subtitle);
-            font-size: 90%;
-            font-weight: 500;
-          }
+.service_body {
+  background-image: url('../imagenes/know_fondo-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .service_main {
+    display: block;
+    text-align: center;
+    height: 70%;
+    max-height: 70%;
+
+    /* Estilos generales para la sección principal */
+    section {
+      margin: 5%;
+
+      h1 {
+        color: map-get($font_colors, generic_color-titles);
+        font-family: var(--subtitle);
+        font-size: 2rem;
+        font-weight: 450;
+      }
+
+      h6 {
+        font-family: var(--subtitle);
+        font-size: 90%;
+        font-weight: 500;
+      }
+    }
+
+    /* Estilos para la segunda sección */
+    .service_main-section2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-content: center;
+      height: 79%;
+
+      nav {
+        img {
+          border-radius: 50%;
+          width: 150px; /* Ajusta el ancho según tus necesidades */
+          height: 150px; /* Ajusta la altura según tus necesidades */
+          object-fit: cover;
         }
-      .service_main-section2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-content: center;
-        height: 79%;
-        nav{ 
-          img{
-            border-radius: 50%;
-            width: 150px; /* Ajusta el ancho según tus necesidades */
-            height: 150px; /* Ajusta la altura según tus necesidades */
-            object-fit: cover; 
-        }h6{
-            font-family: var(--subtitle);
-            font-size: 1rem;
-        }p{
-            font-family:var(--subtitle);
-            font-size: 80%;
-            font-weight: 500;
+
+        h6 {
+          font-family: var(--subtitle);
+          font-size: 1rem;
+        }
+
+        p {
+          font-family: var(--subtitle);
+          font-size: 80%;
+          font-weight: 500;
         }
       }
-    } 
+    }
   }
-  }
+}

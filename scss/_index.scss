@@ -1,63 +1,54 @@
-      /*"nav" para enlaces*/
-      .generic_nav{  /*header*/
-         div{
-          ul{
-          li{
-            .index_nav-a{
-              color:map-get($font_colors,index_subtitle-enlaces)!important;
-            }
-          }
-        }
-      }
-    }  
+/* "nav" para enlaces */
+.generic_nav div ul li .index_nav-a {
+  color: map-get($font_colors, index_subtitle-enlaces) !important;
+}
 
-    
+/* index_main */
+.index_main {
+  height: auto;
+  margin-bottom: 5%;
+  margin-block: 5%;
 
-   
-      .index_main{
-        height: auto;
-        margin-bottom: 5%;
-        margin-block: 5%;
-          .index_section1{
-            height: auto; 
-            box-sizing: none!important;
-            margin-block: 0px;
-            font-size: 100%;    
-            h6{
-            margin: 5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;  
-            padding: 2%;
-            text-align: center;
-            font-family: var(--subtitle);
-            font-size: larger;
-            color: map-get($font_colors,index_subtitle-enlaces);
-            }
-          }
-          section{
-            div{
-              display: flex;
-              align-items: flex-start;
-              justify-content: center;
-              height: auto;
-            
-              p{
-                background-color: map-get($font_colors,index_background-color-pf);
-                border-radius: 10px;
-                font-family: var(--subtitle);
-                font-size: 30px;
-                font-weight: 400;
-                font-size: larger;
-                align-items: center;
-                color: map-get($font_colors,index_subtitle-enlaces);
-                padding: 20px;
-                max-width: 70%;
-              }  
-            }
-          }
-        }
+  /* index_section1 */
+  .index_section1 {
+    height: auto;
+    box-sizing: none !important;
+    margin-block: 0px;
+    font-size: 100%;
 
-   
-  
-  
+    /* h6 */
+    h6 {
+      margin: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2%;
+      text-align: center;
+      font-family: var(--subtitle);
+      font-size: larger;
+      color: map-get($font_colors, index_subtitle-enlaces);
+    }
+  }
+
+  /* section */
+  section div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+
+    /* p */
+    p {
+      background-color: map-get($font_colors, index_background-color-pf);
+      border-radius: 10px;
+      font-family: var(--subtitle);
+      font-size: 30px;
+      font-weight: 400;
+      font-size: larger; /* Duplicado, se podría eliminar */
+      align-items: center; /* No es necesario para elementos en línea */
+      color: map-get($font_colors, index_subtitle-enlaces);
+      padding: 20px;
+      max-width: 70%;
+    }
+  }
+}
