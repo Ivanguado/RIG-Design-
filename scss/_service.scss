@@ -7,24 +7,24 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
       .service_main{
         display: block;
         text-align: center;
-        height: 80%;
+        height: 70%;
+        max-height: 70%;
         section{ 
           margin: 5%;
-        h1{
-          color: map-get($font_colors, generic_color-titles);
-          font-family: var(--subtitle);
-          font-size: 2rem;
-          font-weight: 450;
-        }
-        h6{
-          font-family:var(--subtitle);
-          font-size: 90%;
-          font-weight: 500;
-        }
+          h1{
+            color: map-get($font_colors, generic_color-titles);
+            font-family: var(--subtitle);
+            font-size: 2rem;
+            font-weight: 450;
+          }
+          h6{
+            font-family:var(--subtitle);
+            font-size: 90%;
+            font-weight: 500;
+          }
         }
       .service_main-section2{
         display: flex;
@@ -33,19 +33,21 @@
         flex-wrap: wrap;
         align-content: center;
         height: 79%;
-        nav img{
-          border-radius: 50%;
-          width: 150px; /* Ajusta el ancho según tus necesidades */
-          height: 150px; /* Ajusta la altura según tus necesidades */
-          object-fit: cover; 
+        nav{ 
+          img{
+            border-radius: 50%;
+            width: 150px; /* Ajusta el ancho según tus necesidades */
+            height: 150px; /* Ajusta la altura según tus necesidades */
+            object-fit: cover; 
         }h6{
-          font-family: var(--subtitle);
-          font-size: 1rem;
+            font-family: var(--subtitle);
+            font-size: 1rem;
         }p{
-          font-family:var(--subtitle);
-          font-size: 80%;
-          font-weight: 500;
+            font-family:var(--subtitle);
+            font-size: 80%;
+            font-weight: 500;
         }
       }
     } 
+  }
   }

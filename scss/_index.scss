@@ -15,46 +15,48 @@
 
    
       .index_main{
-        height: 70%;
+        height: auto;
+        margin-bottom: 5%;
+        margin-block: 5%;
           .index_section1{
-            height: 20%;
+            height: auto; 
             box-sizing: none!important;
-            margin-block: 50px;
-            font-size: 100%;
+            margin-block: 0px;
+            font-size: 100%;    
+            h6{
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            padding: 2%;
+            text-align: center;
+            font-family: var(--subtitle);
+            font-size: larger;
+            color: map-get($font_colors,index_subtitle-enlaces);
+            }
           }
           section{
-         
-          h6{
-          display: flex;
-          justify-content: center;
-          align-items: center;  
-          padding: 2%;
-          text-align: center;
-          font-family: var(--subtitle);
-          font-size: larger;
-          color: map-get($font_colors,index_subtitle-enlaces);
-          }
-          div{
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            height: 40%;
+            div{
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+              height: auto;
             
-            p{
-              background-color: map-get($font_colors,index_background-color-pf);
-              border-radius: 10px;
-              font-family: var(--subtitle);
-              font-size: 30px;
-              font-weight: 400;
-              font-size: larger;
-              align-items: center;
-              color: map-get($font_colors,index_subtitle-enlaces);
-              padding: 20px;
-              max-width: 70%;
+              p{
+                background-color: map-get($font_colors,index_background-color-pf);
+                border-radius: 10px;
+                font-family: var(--subtitle);
+                font-size: 30px;
+                font-weight: 400;
+                font-size: larger;
+                align-items: center;
+                color: map-get($font_colors,index_subtitle-enlaces);
+                padding: 20px;
+                max-width: 70%;
+              }  
             }
           }
         }
-      }
 
    
   
