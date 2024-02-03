@@ -125,7 +125,20 @@
 
     /*------------CONTACT-----------*/
    
-      
+       /*------------GENERIC-----------*/
+    /* "nav" para enlaces */
+.generic_nav { /* header */
+
+  button{
+    margin-right: 20%;
+  }
+  
+  div ul {
+    /* Decoración */
+    gap: 15px;
+  }
+
+}
       
     }
     
@@ -176,7 +189,21 @@
       }
     }   
 
+        /*------------GENERIC-----------*/
+    /* "nav" para enlaces */
+.generic_nav { /* header */
 
+  button{
+    margin-right: 20%;
+  }
+
+  div ul {
+    /* Decoración */
+    gap: 15px;
+  }
+
+}
+     
 
     }
 
@@ -235,11 +262,6 @@
         bottom: 0px;
         height: auto;
         div{
-          p{
-
-          }
-        }
-        div{
           gap: 10px;
           a{
             img{
@@ -248,6 +270,23 @@
           }
         }
       }
+
+
+
+       /*------------GENERIC-----------*/
+    /* "nav" para enlaces */
+.generic_nav { /* header */
+
+  button{
+    margin-right: 20%;
+  }
+
+  div ul {
+    /* Decoración */
+    gap: 15px;
+  }
+
+}
 
     }
     

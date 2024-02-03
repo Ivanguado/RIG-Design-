@@ -46,7 +46,7 @@ body {
 .generic_nav { /* header */
   display: flex;
   justify-content: space-between !important;
-  width: 90%;
+  width: 100%;
   height: 20%;
   /* "a" Enlaces del header */
   /* Imagen logo */
@@ -75,6 +75,7 @@ body {
   flex-basis: 100%;
   flex-grow: 0 !important;
   align-items: center;
+  width: 50%;
 }
 .generic_nav div ul {
   /* Modelo de caja */
@@ -459,6 +460,16 @@ body {
   /*-------- GALLERY ----------- */
   /* ---------- KNOW MORE ----------*/
   /*------------CONTACT-----------*/
+  /*------------GENERIC-----------*/
+  /* "nav" para enlaces */
+  .generic_nav { /* header */ }
+  .generic_nav button {
+    margin-right: 20%;
+  }
+  .generic_nav div ul {
+    /* Decoración */
+    gap: 15px;
+  }
 }
 /* Tabletas pequeñas (entre 600px y 767px) */
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -482,6 +493,16 @@ body {
   .contact_body .contact_main--section2 {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  /*------------GENERIC-----------*/
+  /* "nav" para enlaces */
+  .generic_nav { /* header */ }
+  .generic_nav button {
+    margin-right: 20%;
+  }
+  .generic_nav div ul {
+    /* Decoración */
+    gap: 15px;
   }
 }
 /* Para dispositivos con pantallas pequeñas, como los teléfonos, en modo horizontal (entre 480px y 599px) */
@@ -514,6 +535,16 @@ body {
   }
   .generic_footer div a img {
     width: 25px;
+  }
+  /*------------GENERIC-----------*/
+  /* "nav" para enlaces */
+  .generic_nav { /* header */ }
+  .generic_nav button {
+    margin-right: 20%;
+  }
+  .generic_nav div ul {
+    /* Decoración */
+    gap: 15px;
   }
 }
 
