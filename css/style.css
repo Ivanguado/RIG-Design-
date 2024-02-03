@@ -540,7 +540,7 @@ body {
   /* "nav" para enlaces */
   .generic_nav { /* header */ }
   .generic_nav button {
-    margin-right: 20%;
+    margin-right: 10%;
   }
   .generic_nav div ul {
     /* Decoración */
